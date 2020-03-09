@@ -1,13 +1,24 @@
-from Attack_Services import Attack_Services
 from datetime import datetime
 
 
-class Loggin(Attack_Services):
+class Loggin:
     """
 
     Класс логирования запросов юзера
 
     """
+
+    def __init__(self, code_country, phone):
+        """
+
+        Инициализация Кода Страны и номера телефоа для логирования
+        :param code_country: код страны
+        :param phone: номер телефона
+
+        """
+        self.phone = str(phone)
+        self.code_country = str(code_country)
+
 
     def loggin(self):
         """
